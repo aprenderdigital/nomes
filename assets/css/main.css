@@ -2717,18 +2717,18 @@ input, select, textarea {
 				background-color: #7ecaf6;
 			}
 			.tiles article.style-azul2 > .image:before {
-				background-color: #8499e7;
+				background-color: #5964da;
 			}
 
-			.tiles article.style-verde > .image:before {
+			.tiles article.style-verde1 > .image:before {
 				background-color: #7bd0c1;
 			}
 
-			.tiles article.style-vermelho > .image:before {
-				background-color: #c75b9b;
+			.tiles article.style-vermelho1 > .image:before {
+				background-color: #902d48;
 			}
 
-			.tiles article.style5 > .image:before {
+			.tiles article.style-roxo1 > .image:before {
 				background-color: #ae85ca;
 			}
 

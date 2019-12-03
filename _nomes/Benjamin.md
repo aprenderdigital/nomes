@@ -1,7 +1,9 @@
 ---
 title: Benjamin
+artigo: o
 picture: /images/b/Benjamin.jpg
-background: /images/fundos/gradient08.jpg
-style: style-azul1
+background: /images/fundos/texture-green.jpg
+style: style-verde1
 description: Significado do nome Benjamin
+full-description: O sentido literal do nome de Benjamin, do hebraico Ben-iamin, é filho do lado direito, lado onde fica nosso coração, portanto, bem-amado! Bom senso, responsabilidade e muito amor à família são características de quem se chama Benjamin! Que amor, não?
 ---
