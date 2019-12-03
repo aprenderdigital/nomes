@@ -1,12 +1,14 @@
+---
+---
 <!DOCTYPE HTML>
 <!--
 	Phantom by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="pt">
 	<head>
-		<title>Phantom by HTML5 UP</title>
+		<title>{{ site.title }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -15,14 +17,12 @@
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
-
 				<!-- Header -->
 					<header id="header">
 						<div class="inner">
-
 							<!-- Logo -->
 								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">{{ site.title }}</span>
 								</a>
 
 							<!-- Nav -->
@@ -56,61 +56,22 @@
 								<p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
 							</header>
 							<section class="tiles">
-								<article class="style-verde">
-									<span class="image">
-										<img src="a/AnaLauraT.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Ana Laura</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style-azul1">
-									<span class="image">
-										<img src="b/BenjaminT.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Benjamin</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style-azul2">
-									<span class="image">
-										<img src="b/BernardoT.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Bernardo</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style-vermelho">
-									<span class="image">
-										<img src="j/JuliaT.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Julia</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style-verde">
-									<span class="image">
-										<img src="a/AnaLauraZ.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Ana Laura</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
+								{% for nome in site.nomes %}
+									<article class="{{nome.style}}">
+										<span class="image">
+											<img src="{{nome.background}}" alt="" />
+										</span>
+										<a href="{{ nome.url }}">
+											<h2>{{nome.title}}</h2>
+											<div class="content">
+												<p>{{nome.description}}</p>
+											</div>
+										</a>
+									</article>
+								{% endfor %}
+							</section>
+
+							<section class="tiles">
 								<article class="style5">
 									<span class="image">
 										<img src="images/pic05.jpg" alt="" />
