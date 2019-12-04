@@ -2727,6 +2727,10 @@ input, select, textarea {
 			.tiles article.style-vermelho1 > .image:before {
 				background-color: #902d48;
 			}
+			.tiles article.style-vermelho2 > .image:before {
+				background-color: #da4b5a;
+			}
+
 			.tiles article.style-laranja1 > .image:before {
 				background-color: #d8442c;
 			}
