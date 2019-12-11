@@ -2723,6 +2723,9 @@ input, select, textarea {
 			.tiles article.style-verde1 > .image:before {
 				background-color: #7bd0c1;
 			}
+			.tiles article.style-verde2 > .image:before {
+				background-color: #4b724b;
+			}
 
 			.tiles article.style-vermelho1 > .image:before {
 				background-color: #902d48;
@@ -2733,6 +2736,14 @@ input, select, textarea {
 
 			.tiles article.style-laranja1 > .image:before {
 				background-color: #d8442c;
+			}
+
+			.tiles article.style-amarelo1 > .image:before {
+				background-color: #dc8d34;
+			}
+
+			.tiles article.style-amarelo2 > .image:before {
+				background-color: #ecfd14;
 			}
 
 			.tiles article.style-roxo1 > .image:before {
