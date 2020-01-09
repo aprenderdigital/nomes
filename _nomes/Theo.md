@@ -1,7 +1,7 @@
 ---
 title: Theo
 artigo: o
-picture: /images/t/Theo.jpg
+picture: /images/t/theo.jpg
 background: /images/fundos/bolas.jpg
 style: style-vermelho2
 description: Significado do nome Theo

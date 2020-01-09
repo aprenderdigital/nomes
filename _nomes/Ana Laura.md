@@ -1,7 +1,7 @@
 ---
 title: Ana Laura
 artigo: a
-picture: /images/a/Ana Laura.png
+picture: /images/a/analaura.jpg
 background: /images/fundos/striped.jpg
 style: style-roxo1
 description: Significado do nome Ana Laura
