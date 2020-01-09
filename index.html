@@ -15,6 +15,9 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v5.0&appId=1361733010640564&autoLogAppEvents=1"></script>
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 				<!-- Header -->
@@ -56,8 +59,8 @@
 								<p> Já parou para pensar sobre nome próprio?! A primeira e mais importante palavra que aprendemos e que ouvimos por toda a nossa vida
 									é nosso nome. Cada um vem carregado de simbolismos. Desde a razão de sua escolha, a história de cada um, até o seu significado!
 									Pensando nisso, preparamos este Dicionário de Nomes, que revela alguns significados e um pouco da personalizade de cada nome.
-									Será que o seu nome ou daquela pessoa especial estão aqui? Se, por acaso, você não encontrar o nome que deseja em nossos arquivos, nos avise! 
-									.</p>
+									Será que o seu nome ou daquela pessoa especial estão aqui? Se, por acaso, você não encontrar o nome que deseja em nossos arquivos, <a href="#comments">nos avise!</a> 
+									</p>
 							</header>
 							<section class="tiles">
 								{% for nome in site.nomes %}
@@ -173,24 +176,11 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
-							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
+							<section id="comments">
+								<h2>Não encontrou o nome?</h2>
+								<p>Use o seu Facebook e conte para nós aqui em baixo 👇 qual nome você quer ver em nossa lista.</p>
+                <div class="fb-comments" data-href="https://nomes.aprender.digital" data-width="" data-numposts="30"></div>
+
 							</section>
 							<section>
 								<h2>Follow</h2>
@@ -206,7 +196,7 @@
 								</ul>
 							</section>
 							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; APRENDER.digital. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</footer>
