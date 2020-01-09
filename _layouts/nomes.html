@@ -8,6 +8,9 @@
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v5.0&appId=1361733010640564&autoLogAppEvents=1"></script>
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -35,10 +38,10 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="/index.html">Home</a></li>
-							<li><a href="/generic.html">Ipsum veroeros</a></li>
-							<li><a href="/generic.html">Tempus etiam</a></li>
-							<li><a href="/generic.html">Consequat dolor</a></li>
-							<li><a href="/elements.html">Elements</a></li>
+							<li><a href="/index.html#Alice">Alice...</a></li>
+							<li><a href="/index.html#Elisa">Elisa...</a></li>
+							<li><a href="/index.html#Marina">Marina...</a></li>
+							<li><a href="/index.html#Valentina">Valentina...</a></li>
 						</ul>
 					</nav>
 
@@ -48,52 +51,40 @@
 							<h1>{{page.title}}</h1>
 							<!--<span class="image main"><img src="/images/pic13.jpg" alt="" /></span>-->
 							<p class="bigger">{{page.full-description}}</p>
-							<p class="bigger">veja o <i>banner</i> que criamos para {{page.artigo}} {{page.title}}. 😍</p>
+							<p class="bigger">Veja o <i>banner</i> que criamos para {{page.artigo}} {{page.title}}. 😍</p>
 							<span class="image main"><img src="{{page.picture}}" alt="" /></span>
 						</div>
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+				<footer id="footer">
+					<div class="inner">
+						<section id="comments">
+							<h2>Não encontrou o nome que procurava?</h2>
+							<p>Use o seu Facebook e conte para nós aqui em baixo 👇 qual nome você quer ver em nossa lista.</p>
+							<div class="fb-comments" data-href="https://nomes.aprender.digital" data-width="" data-numposts="30"></div>
 
+						</section>
+						<section>
+							<h2>Contato</h2>
+							<ul class="icons">
+								<li><a href="https://www.facebook.com/pagina.aprender.digital/" target="_blank" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="mailto:equipe.aprender.digital@gmail.com?subject=Dicionario de nomes" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								<!--
+								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+								<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+								-->
+							</ul>
+						</section>
+						<ul class="copyright">
+							<li>&copy; APRENDER.digital. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
 			</div>
 
 		<!-- Scripts -->
