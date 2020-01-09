@@ -1,7 +1,7 @@
 ---
 title: João Miguel
 artigo: o
-picture: /images/j/joaomiguel.jpg
+picture: /images/j/Joao_miguel.jpg
 background: /images/fundos/poa.jpg
 style: style-amarelo1
 description: Significado do nome João Miguel
