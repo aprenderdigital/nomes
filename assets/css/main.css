@@ -3353,7 +3353,11 @@ input, select, textarea {
 
 		}
 
-/*3D*/
+/*BOX + 3D*/
+.etiqueta {
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
 .box3d {
 	display: flex;
 	position: relative;
@@ -3365,8 +3369,8 @@ input, select, textarea {
 	line-height: 200px;
 	font-family: sans-serif;
 	font-weight: bold;
-	white-space: nowrap;
-	/*overflow: hidden;*/
+	/*white-space: nowrap;*/
+	overflow: hidden;
 
 	display: block;
 
@@ -3396,10 +3400,10 @@ input, select, textarea {
 .box3d .inner span {
 	position: relative;
 	top: -260px;
-	left: -15px;
+	/*left: -15px;*/
 	font-size: 2.2em;
 	/*font-size: 2.5vw;*/
-	text-align: left;
+	/*text-align: left;*/
 	/*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
 	/*animation: marquee 5s linear infinite;*/
 }
