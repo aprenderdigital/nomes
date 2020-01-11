@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>FormWizard_v1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<script>
+			var query = location.search.slice(1);
+			var partes = query.split('&');
+			var data = {};
+			partes.forEach(function (parte) {
+			var chaveValor = parte.split('=');
+			var chave = chaveValor[0];
+			var valor = chaveValor[1];
+			data[chave] = valor;
+			});
+			console.log(data);
+			if (typeof data["p"] == 'undefined' || 
+			    typeof data["n"] == 'undefined' || 
+					typeof data["g"] == 'undefined') {
+				window.location.href = 'https://nomes.aprender.digital';
+			}
+		</script>
+		<div class="wrapper">
+            <form action="" id="wizard">
+        		<!-- SECTION 1 -->
+                <h2></h2>
+								<section>
+									<div class="inner">
+										<div class="image-holder">
+											<img src="images/form-wizard-1.jpg" alt="">
+										</div>
+										<div class="form-content">
+											<div class="form-header">
+												<h3>COMPARTILHAMENTO</h3>
+											</div>
+											<p>Antes de iniciarmos o processo de compartilhamento, escolha uma das opções abaixo:</p>
+											<div class="form-row w-100">
+												<div class="checkbox-tick">
+													<label class="male">
+														<input type="radio" name="gender" value="male" checked>
+														<spam id="idade1">Opção 1</spam>
+														<span class="checkmark"></span>
+													</label> <br /><br />
+													<label class="female">
+														<input type="radio" name="gender" value="female">
+														<spam id="idade2">Opção 2</spam>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+								
+								
+										</div>
+									</div>
+								</section>
+
+				<!-- SECTION 2 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="images/form-wizard-2.jpg" alt="">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>COMPARTILHAMENTO</h3>
+							</div>
+							<p>Gostaríamos de presentear <spam id="nomeP2"></spam> com um livro infantil personalizado.</p>
+							<div class="form-row">
+								<div class="form-holder w-100">
+									<input type="text" placeholder="Address" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" placeholder="City" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" placeholder="Zip Code" class="form-control">
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="select">
+									<div class="form-holder">
+										<div class="select-control">Your country</div>
+										<i class="zmdi zmdi-caret-down"></i>
+									</div>
+									<ul class="dropdown">
+										<li rel="United States">United States</li>
+										<li rel="United Kingdom">United Kingdom</li>
+										<li rel="Viet Nam">Viet Nam</li>
+									</ul>
+								</div>
+								<div class="form-holder"></div>
+							</div>
+						</div>
+					</div>
+                </section>
+
+                <!-- SECTION 3 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="images/form-wizard-3.jpg" alt="">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>Registration</h3>
+							</div>
+							<p>Send an optional message</p>
+							<div class="form-row">
+								<div class="form-holder w-100">
+									<textarea name="" id="" placeholder="Your messagere here!" class="form-control" style="height: 99px;"></textarea>
+								</div>
+							</div>
+							<div class="checkbox-circle mt-24">
+								<label>
+									<input type="checkbox" checked>  Please accept <a href="#">terms and conditions ?</a>
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+                </section>
+            </form>
+		</div>
+
+	<script>
+		document.getElementById("idade1").innerHTML = data["g"] + " " + unescape(data["n"]) + " tem MENOS de 8 anos.";
+		document.getElementById("idade2").innerHTML = data["g"] + " " + unescape(data["n"]) + " tem MAIS de 8 anos.";
+		document.getElementById("nomeP2").innerHTML = data["g"].toLowerCase() + " " + unescape(data["n"]);
+	</script>
+		<!-- JQUERY -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+
+		<!-- JQUERY STEP -->
+		<script src="js/jquery.steps.js"></script>
+		<script src="js/main.js"></script>
+		<!-- Template created and distributed by Colorlib -->
+</body>
+</html>
