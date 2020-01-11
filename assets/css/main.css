@@ -3379,7 +3379,7 @@ input, select, textarea {
 
 .box3d .inner p {
 	position: relative;
-	top: -55px;
+	top: -65px;
 	left: 30px;
 	font-size: 1em;
 	/*font-size: 2.5vw;*/
@@ -3390,7 +3390,7 @@ input, select, textarea {
 
 .box3d .inner span {
 	position: relative;
-	top: -255px;
+	top: -260px;
 	left: -15px;
 	font-size: 2.2em;
 	/*font-size: 2.5vw;*/
