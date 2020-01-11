@@ -3353,9 +3353,15 @@ input, select, textarea {
 
 		}
 
-/*BOX + 3D*/
+/*BOX + 3D + texto*/
 .etiqueta {
 	font-family: 'Gloria Hallelujah', cursive;
+}
+
+@media screen and (max-width: 736px) {
+	.texto-desktop {
+		display:none;
+	}
 }
 
 .box3d {
