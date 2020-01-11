@@ -3371,20 +3371,31 @@ input, select, textarea {
 	top: 70px;
 	left: 50px;
 	/*background-color: lightcoral;*/
-	color:#5964da;
+	color:#000000;
 	/*transform-origin: left;*/
 	transform-style: preserve-3d;
 	transform: translateZ(1em) rotateX(-40deg) rotateY(21deg);
 }
 
+.box3d .inner p {
+	position: relative;
+	top: -55px;
+	left: 30px;
+	font-size: 1em;
+	/*font-size: 2.5vw;*/
+	text-align: left;
+	/*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+	/*animation: marquee 5s linear infinite;*/
+}
+
 .box3d .inner span {
 	position: relative;
-	top: -20px;
-	left: 0px;
+	top: -255px;
+	left: -15px;
 	font-size: 2.2em;
 	/*font-size: 2.5vw;*/
-	text-align: center;
-	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	text-align: left;
+	/*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
 	/*animation: marquee 5s linear infinite;*/
 }
 
