@@ -202,19 +202,19 @@ p {
 .form-control {
   height: 37px;
   border: none;
-  border-bottom: 2px solid #e6e6e6;
+  border-bottom: 2px solid rgb(5, 129, 12);
   width: 100%;
   color: #666; }
   .form-control:focus {
-    border-color: #e9e0cf; }
+    border-color: #31e06c; }
   .form-control::-webkit-input-placeholder {
-    color: #999; }
+    color: rgb(5, 129, 12); }
   .form-control::-moz-placeholder {
-    color: #999; }
+    color: rgb(5, 129, 12); }
   .form-control:-ms-input-placeholder {
-    color: #999; }
+    color: rgb(5, 129, 12); }
   .form-control:-moz-placeholder {
-    color: #999; }
+    color: rgb(5, 129, 12); }
 
 select.form-control {
   -moz-appearance: none;

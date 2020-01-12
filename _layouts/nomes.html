@@ -4,6 +4,17 @@
 		<title>{{ page.title }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta property="og:title"         	content="{{ site.title }} - {{page.title}}" />
+		<meta property="og:type"          	content="website" />
+		<!--<meta property="og:url"           	content="https://nomes.aprender.digital/a/AnaLaura.html/" />-->
+		<meta property="og:image"         	content="https://nomes.aprender.digital/{{page.picture}}" />
+		<meta property="og:image:type" 			content="image/jpeg" />
+		<meta property="og:image:width" 		content="1200" />
+		<meta property="og:image:height" 		content="628" />
+		<meta property="fb:app_id"          content="1361733010640564" /> 
+		<meta property="og:description"   	content="{{page.description}}" />
+		<meta property="og:locale" 		  		content="pt_BR" />
+	
 		<link rel="stylesheet" href="/assets/css/main.css" />
 		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">	</head>
 	<body class="is-preload">
@@ -58,12 +69,13 @@
 						<div class="inner">
 							<div class="row ">
 								<div class="col-8 col-12-small">
-									<p><spam class="bigger">🎁 Preparamos um <b>PRESENTE</b> exclusivo para {{page.artigo}} <b>{{page.title}}</b>! Clique e confira!</spam>
+									<p><spam class="bigger">🎁 Preparamos um <b>PRESENTE</b> exclusivo para {{page.artigo}} <b>{{page.title}}</b>! 
+										<a href="/presente/index.html?n={{page.title}}&g={{page.artigo}}">Clique e confira</a>!</spam>
 										
 									<spam class="texto-desktop">
 										<br />
 										Incentivar a leitura é nossa vocação! 
-										Por isso, fizemos um livro digital personalizado, 
+										Por isso, criamos um livro digital personalizado, 
 										para crianças em fase de alfabetização usando como estratégia o nome do leitor envolvido na história! 
 										De 0 a 100 anos, a emoção de se encontrar durante a leitura é igual para todos! 
 										Por isso, acreditamos que {{page.artigo}} {{page.title}} vai adorar essa surpresa!
@@ -72,7 +84,7 @@
 								</div>
 	
 								<div class="col-4 col-12-small">
-								<div class="box3d">
+								<div id="clickbox" class="box3d">
 									<img src="/images/misterybox.jpg" />
 									<div class="inner">
 										<p class="etiqueta">Entrega para:</p>
@@ -108,6 +120,12 @@
 			</div>
 
 		<!-- Scripts -->
+		  <script>
+			document.getElementById('clickbox')
+        .addEventListener('click', function (event) {
+					window.location.href = '/presente/index.html?n={{page.title}}&g={{page.artigo}}';
+        });
+			</script>
 			<script src="/assets/js/jquery.min.js"></script>
 			<script src="/assets/js/browser.min.js"></script>
 			<script src="/assets/js/breakpoints.min.js"></script>

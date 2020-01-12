@@ -12,13 +12,16 @@ $(function(){
         }
     });
     $('.wizard > .steps li a').click(function(){
+        document.getElementById("wizard").reportValidity();
+        alert("a");
+
     	$(this).parent().addClass('checked');
 		$(this).parent().prevAll().addClass('checked');
 		$(this).parent().nextAll().removeClass('checked');
     });
     // Custome Jquery Step Button
     $('.forward').click(function(){
-    	$("#wizard").steps('next');
+        //$("#wizard").steps('next');
     })
     $('.backward').click(function(){
         $("#wizard").steps('previous');
