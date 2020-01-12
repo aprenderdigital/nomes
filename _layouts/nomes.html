@@ -70,7 +70,7 @@
 							<div class="row ">
 								<div class="col-8 col-12-small">
 									<p><spam class="bigger">🎁 Preparamos um <b>PRESENTE</b> exclusivo para {{page.artigo}} <b>{{page.title}}</b>! 
-										<a href="/presente/index.html?n={{page.title}}&g={{page.artigo}}">Clique e confira</a>!</spam>
+										<a onClick = "presente()" href="javascript:void(0);">Clique e confira</a>!</spam>
 										
 									<spam class="texto-desktop">
 										<br />
@@ -120,12 +120,19 @@
 			</div>
 
 		<!-- Scripts -->
-		  <script>
+		<script>
+			
+			function generateURL() {
+				return ("/presente/index.html?n={{page.title}}&g={{page.artigo}}&u=" + window.location.pathname);
+			}
+			function presente() {
+				window.location.href = generateURL();
+			}
 			document.getElementById('clickbox')
-        .addEventListener('click', function (event) {
-					window.location.href = '/presente/index.html?n={{page.title}}&g={{page.artigo}}';
-        });
-			</script>
+				.addEventListener('click', function (event) {
+					window.location.href = generateURL();
+				});
+		</script>
 			<script src="/assets/js/jquery.min.js"></script>
 			<script src="/assets/js/browser.min.js"></script>
 			<script src="/assets/js/breakpoints.min.js"></script>

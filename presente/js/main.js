@@ -35,6 +35,9 @@ $(function(){
             }
             return form.checkValidity(); 
         },
+        onFinished: function (event, currentIndex) {
+            window.location.href = data["u"];
+        },
         labels: {
             finish: "Terminar",
             next: "Enviar",

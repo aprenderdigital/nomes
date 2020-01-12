@@ -24,7 +24,9 @@
 			data[chave] = valor;
 			});
 			console.log(data);
-			if (typeof data["n"] == 'undefined' || typeof data["g"] == 'undefined') {
+			if (typeof data["n"] == 'undefined' || 
+				typeof data["g"] == 'undefined' ||
+				typeof data["u"] == 'undefined') {
 				window.location.href = 'https://nomes.aprender.digital';
 			}
 		</script>
