@@ -1,7 +1,7 @@
 ---
 title: Sophia
 artigo: a
-picture: /images/s/sophia1.jpg
+picture: /images/s/Sophia1.jpg
 background: /images/fundos/bolas.jpg
 style: style-vermelho2
 description: Significado do nome Sopha
