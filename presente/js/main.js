@@ -24,14 +24,25 @@ $(function(){
                 $('.steps ul').removeClass('step-4');
                 $('.actions ul').removeClass('step-last');
             }
-            
             var form = document.getElementById("formulario");
             //form.validate().settings.ignore = ":disabled,:hidden";
+            
             if (!form.checkValidity()) {
                 document.getElementById("idMsgErro").className = "msgShowErro";
             }
             else {
-                document.getElementById("p2Email").innerHTML =  document.getElementById("email").value;
+                document.getElementById("idMsgErro").className = "msgHideErro";
+            }
+            if (currentIndex === 0) {
+                if (form.checkValidity()) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () { console.log(this); }
+                    xhttp.open("GET", "https://us-central1-site-nomes-aprender-digital.cloudfunctions.net/enviarEmailPresente?e=" +
+                        document.getElementById("email").value + "&n=" + data["n"] + "&g=" + data["g"]);
+                    xhttp.send();
+
+                    document.getElementById("p2Email").innerHTML = document.getElementById("email").value;
+                }
             }
             return form.checkValidity(); 
         },
