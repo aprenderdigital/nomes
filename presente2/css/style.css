@@ -107,7 +107,7 @@ body {
       top: -38px;
       position: absolute; }
     .steps ul.step-2:before {
-      content: "Additional Information"; }
+      content: "Confirmação"; }
     .steps ul.step-3:before {
       content: "Your Order"; }
     .steps ul.step-4:before {
@@ -465,4 +465,12 @@ input:invalid {
 input:valid {
   color:black;
   background: rgb(173, 248, 136);
+}
+
+.msgHideErro {
+  color:red;
+  visibility: hidden;
+}
+.msgShowErro {
+  color:red;
 }

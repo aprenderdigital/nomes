@@ -27,8 +27,13 @@ $(function(){
             
             var form = document.getElementById("formulario");
             //form.validate().settings.ignore = ":disabled,:hidden";
-            alert(form.checkValidity());
-            return form.reportValidity(); 
+            if (!form.checkValidity()) {
+                document.getElementById("idMsgErro").className = "msgShowErro";
+            }
+            else {
+                document.getElementById("p2Email").innerHTML =  document.getElementById("email").value;
+            }
+            return form.checkValidity(); 
         },
         labels: {
             finish: "Terminar",
@@ -55,3 +60,6 @@ $(function(){
         $(this).addClass('active');
     })
 })
+function desligaErro() {
+    document.getElementById("idMsgErro").className = "msgHideErro";
+}
