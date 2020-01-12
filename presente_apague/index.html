@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Presente</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<script>
+			var query = location.search.slice(1);
+			var partes = query.split('&');
+			var data = {};
+			partes.forEach(function (parte) {
+			var chaveValor = parte.split('=');
+			var chave = chaveValor[0];
+			var valor = chaveValor[1];
+			data[chave] = valor;
+			});
+			console.log(data);
+			if (typeof data["n"] == 'undefined' || typeof data["g"] == 'undefined') {
+				window.location.href = 'https://nomes.aprender.digital';
+			}
+		</script>
+		<div class="wrapper">
+            <form action="" id="wizard">
+        		<!-- SECTION 1 -->
+                <h2></h2>
+								<section>
+									<div class="inner">
+										<div class="image-holder">
+											<img src="images/form-wizard-1.jpg" alt="">
+										</div>
+										<div class="form-content">
+											<div class="form-header">
+												<h3>PRESENTE</h3>
+											</div>
+											<!--<p>Preparamos um PRESENTE exclusivo para <spam id="p1-artigo1"></spam> <spam id="p1-nome1"></spam>!</p>-->
+											Incentivar a leitura é nossa vocação! 
+											Por isso, criamos um livro digital personalizado, 
+											para crianças em fase de alfabetização usando como estratégia o nome do leitor envolvido na história! 
+											De 0 a 100 anos, a emoção de se encontrar durante a leitura é igual para todos! 
+											<br /> <br />
+											Por isso, acreditamos que 
+											<spam id="p1-artigo1"></spam> <b><spam id="p1-nome1"></spam></b> 
+											vai adorar essa surpresa! 
+											Para receber este presente digital gratuito, basta nos informar o seu <b>email</b> abaixo!
+											<br /> <br />
+											<div class="form-row w-100">
+												<input type="email" required placeholder="digite aqui o seu email" class="form-control">
+											</div>
+								
+								
+										</div>
+									</div>
+								</section>
+
+				<!-- SECTION 2 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="images/form-wizard-2.jpg" alt="">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>COMPARTILHAMENTO</h3>
+							</div>
+							<p>Gostaríamos de presentear <spam id="nomeP2"></spam> com um livro infantil personalizado.</p>
+
+
+							<div class="form-row">
+								<div class="select">
+									<div class="form-holder">
+										<div class="select-control">Your country</div>
+										<i class="zmdi zmdi-caret-down"></i>
+									</div>
+									<ul class="dropdown">
+										<li rel="United States">United States</li>
+										<li rel="United Kingdom">United Kingdom</li>
+										<li rel="Viet Nam">Viet Nam</li>
+									</ul>
+								</div>
+								<div class="form-holder"></div>
+							</div>
+						</div>
+					</div>
+                </section>
+
+
+            </form>
+		</div>
+
+	<script>
+		document.getElementById("p1-artigo1").innerHTML = data["g"];
+		document.getElementById("p1-nome1").innerHTML = unescape(data["n"]);
+		document.getElementById("nomeP2").innerHTML = data["g"].toLowerCase() + " " + unescape(data["n"]);
+	</script>
+		<!-- JQUERY -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+
+		<!-- JQUERY STEP -->
+		<script src="js/jquery.steps.js"></script>
+		<script src="js/main.js"></script>
+		<!-- Template created and distributed by Colorlib -->
+</body>
+</html>

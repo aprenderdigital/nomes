@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Presente</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<script>
+			var query = location.search.slice(1);
+			var partes = query.split('&');
+			var data = {};
+			partes.forEach(function (parte) {
+			var chaveValor = parte.split('=');
+			var chave = chaveValor[0];
+			var valor = chaveValor[1];
+			data[chave] = valor;
+			});
+			console.log(data);
+			if (typeof data["n"] == 'undefined' || 
+				typeof data["g"] == 'undefined' ||
+				typeof data["u"] == 'undefined') {
+				window.location.href = 'https://nomes.aprender.digital';
+			}
+		</script>
+		<div class="wrapper">
+			<div class="image-holder">
+				<img src="images/form-wizard.png" alt="">
+			</div>
+            <form id="formulario" action="">
+            	<div id="wizard">
+            		<!-- SECTION 1 -->
+	                <h4></h4>
+					<section>
+						<p>Incentivar a leitura é nossa vocação!
+							Por isso, criamos um livro digital personalizado,
+							para crianças em fase de alfabetização usando como estratégia o nome do leitor envolvido na história!
+							De 0 a 100 anos, a emoção de se encontrar durante a leitura é igual para todos!
+							<br /> <br />
+							Por isso, acreditamos que
+							<spam id="p1-artigo1"></spam> <b>
+								<spam id="p1-nome1"></spam>
+							</b>
+							vai adorar essa surpresa!
+							Para receber este presente digital gratuito, basta nos informar o seu <b>email</b> abaixo!
+						</p>
+						<br /> <br />
+						<div class="form-row">
+							<input type="email" id="email" onkeypress="desligaErro()" required placeholder="digite aqui o seu email"
+								class="form-control">
+							<spam id="idMsgErro" class="msgHideErro">🙄 Precisamos do seu email para o envio do presente.</spam>
+						</div>
+					</section>
+	                
+					<!-- SECTION 2 -->
+	                <h4></h4>
+	                <section>
+										<p>OK!!! Estamos gerando e enviando o livro digital personalizado 🎁
+										d<spam id="p2-artigo1"></spam> <spam id="p2-nome1"></spam> 
+										para o endereço <b><spam id="p2Email"></spam></b>.</p>
+										<br />
+										<p>Então, corre para conferir a sua caixa de entrada. 😀
+											Se o email não chegar nos próximos minutos 🤞, não deixe de conferir
+										  se ele não ficou parado na sua caixa de spam. 👍   </p>
+	                </section>
+
+            	</div>
+            </form>
+		</div>
+
+		<script>
+		document.getElementById("p1-artigo1").innerHTML = data["g"];
+		document.getElementById("p1-nome1").innerHTML = unescape(data["n"]);
+		document.getElementById("p2-artigo1").innerHTML = data["g"];
+		document.getElementById("p2-nome1").innerHTML = unescape(data["n"]);
+
+	  </script>
+
+		<script src="js/jquery-3.3.1.min.js"></script>
+		
+		<!-- JQUERY STEP -->
+		<script src="js/jquery.steps.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+
+		<script src="js/main.js"></script>
+<!-- Template created and distributed by Colorlib -->
+</body>
+</html>
