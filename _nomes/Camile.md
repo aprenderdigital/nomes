@@ -5,5 +5,5 @@ picture: /images/c/Camile.jpg
 background: /images/fundos/Estrelas.jpg
 style: style-vermelho1
 description: Significado do nome Camile
-full-description:  Olha só que interessante, Camile é uma versão afrancesada de Camila. Como sua origem é do latim, camilus, o qual significa mensageiro, Camile significa “menina mensageira”.  Camile reflete alguém comunicativa, simpática, e com bom relacionamento social. Ou  será que podemos dizer que toda Camile é tagarela?!
+full-description:  Olha só que interessante, Camile é uma versão francesa de Camila. Como sua origem é do latim, camilus, o qual significa mensageiro, Camile significa “menina mensageira”. É um nome que reflete alguém comunicativa, simpática, e com bom relacionamento social. Ou será que podemos dizer que toda Camile é tagarela?!
 ---
