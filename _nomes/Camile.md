@@ -1,7 +1,7 @@
 ---
 title: Camile
 artigo: a
-picture: /images/c/Camile.jpg
+picture: /images/c/camile.jpg
 background: /images/fundos/Estrelas.jpg
 style: style-vermelho1
 description: Significado do nome Camile
