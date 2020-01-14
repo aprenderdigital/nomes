@@ -1,7 +1,7 @@
 ---
 title: Heitor
 artigo: o
-picture: /images/h/Heitor.jpg
+picture: /images/h/Heitor2.jpg
 background: /images/fundos/nuvem.jpg
 style: style-azul1
 description: O nome de Heitor tem sua origem...
