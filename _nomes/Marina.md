@@ -1,7 +1,7 @@
 ---
 title: Marina
 artigo: a
-picture: /images/m/marina.jpg
+picture: /images/m/Marina2.jpg
 background: /images/fundos/mar.jpg
 style: style1
 description: Como o próprio nome já...
