@@ -1,7 +1,7 @@
 ---
 title: Lucas
 artigo: o
-picture: /images/l/Lucas.jpg
+picture: /images/l/Lucas2.jpg
 background: /images/fundos/nuvem.jpg
 style: style-amarelo1
 description: Nome bíblico e de origem...
