@@ -199,7 +199,7 @@
 
 			function shareWhatsApp() {
 				gtag('event', 'Compartilhar', {
-						eventAction: 'Whatsapp',
+						eventCategory: 'Whatsapp',
 						eventLabel: '{{page.title}}'
 					});
 				window.open("https://api.whatsapp.com/send?text=Olha que legal. Significado do nome {{page.title}}! 😍 " + window.location.href, '_blank');
