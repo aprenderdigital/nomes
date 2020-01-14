@@ -47,7 +47,7 @@ $(function(){
             return form.checkValidity(); 
         },
         onFinished: function (event, currentIndex) {
-            window.location.href = data["u"];
+            window.location.href = data["u"] + "?concluido";
         },
         labels: {
             finish: "Terminar",
