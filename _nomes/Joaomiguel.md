@@ -1,7 +1,7 @@
 ---
 title: João Miguel
 artigo: o
-picture: /images/j/Joao_miguel.jpg
+picture: /images/j/Joaomiguel2.jpg
 background: /images/fundos/poa.jpg
 style: style-amarelo1
 description: João Miguel é um nome...
