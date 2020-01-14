@@ -1,7 +1,7 @@
 ---
 title: Isabella
 artigo: a
-picture: /images/i/Isabella.jpg
+picture: /images/i/Isabella2.jpg
 background: /images/fundos/coracao.jpg
 style: style-verde2
 description: De origem hebraica...
