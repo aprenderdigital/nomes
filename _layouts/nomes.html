@@ -87,14 +87,14 @@
 									<p><spam class="bigger">🎁 Preparamos um <b>PRESENTE</b> exclusivo para {{page.artigo}} <b>{{page.title}}</b>! 
 										<a onClick = "presente()" href="javascript:void(0);">Clique e confira</a>!</spam>
 										
-									<spam class="texto-desktop">
+									<!--<spam class="texto-desktop">-->
 										<br />
-										Incentivar a leitura é nossa vocação! 
-										Por isso, criamos um livro digital personalizado, 
-										para crianças em fase de alfabetização usando como estratégia o nome do leitor envolvido na história! 
-										De 0 a 100 anos, a emoção de se encontrar durante a leitura é igual para todos! 
-										Por isso, acreditamos que {{page.artigo}} {{page.title}} vai adorar essa surpresa!
-									</spam>
+										Receber um presente já é muito bom! 
+										Mas receber um presente personalizado nos faz sentir especial, não é mesmo? 
+										Temos um presente muito legal personalizado com o nome {{page.title}}. 
+										Acreditamos que <spam id="pronome1"></spam> vai adorar essa surpresa! 
+										<a onClick = "presente()" href="javascript:void(0);">Saiba mais clicando aqui.</a> 
+									<!--</spam>-->
 								 </p>
 								</div>
 	
@@ -149,6 +149,12 @@
 
 		<!-- Scripts -->
 		<script>
+			{% if page.artigo == "a" %}
+				document.getElementById("pronome1").innerHTML = "ela";
+			{% else %}
+				document.getElementById("pronome1").innerHTML = "ele";
+			{% endif %}
+
 			function generateURL() {
 				return ("/presente/index.html?n={{page.title}}&g={{page.artigo}}&u=" + window.location.pathname);
 			}

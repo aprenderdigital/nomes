@@ -39,16 +39,14 @@
             		<!-- SECTION 1 -->
 	                <h4></h4>
 					<section>
-						<p>Incentivar a leitura é nossa vocação!
-							Por isso, criamos um livro digital personalizado,
-							para crianças em fase de alfabetização usando como estratégia o nome do leitor envolvido na história!
-							De 0 a 100 anos, a emoção de se encontrar durante a leitura é igual para todos!
+						<p>
+							Todo mundo gosta de ganhar presentes. 
+							E se esse presente for personalizado com o nosso próprio nome, ele se torna ainda mais especial, não é mesmo?! 
 							<br /> <br />
-							Por isso, acreditamos que
-							<spam id="p1-artigo1"></spam> <b>
-								<spam id="p1-nome1"></spam>
-							</b>
-							vai adorar essa surpresa!
+							Queremos dar de presente para você, leitor do Dicionário Informal de Nomes, 
+							um livro digital infantil com uma história personalizada d<spam id="p1-artigo1"></spam> <b><spam id="p1-nome1"></spam></b>. 
+							Acreditamos que <spam id="p1-pronome1"></spam> vai adorar essa surpresa!
+							<br /> <br />
 							Para receber este presente digital gratuito, basta nos informar o seu <b>email</b> abaixo!
 						</p>
 						<br /> <br />
@@ -78,6 +76,12 @@
 		<script>
 		document.getElementById("p1-artigo1").innerHTML = data["g"];
 		document.getElementById("p1-nome1").innerHTML = unescape(data["n"]);
+		if (data["g"] == "a") {
+			document.getElementById("p1-pronome1").innerHTML = "ela";	
+		}
+		else {
+			document.getElementById("p1-pronome1").innerHTML = "ele";
+		}
 		document.getElementById("p2-artigo1").innerHTML = data["g"];
 		document.getElementById("p2-nome1").innerHTML = unescape(data["n"]);
 
