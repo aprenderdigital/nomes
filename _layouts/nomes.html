@@ -182,19 +182,15 @@
 				}, function (response) { 
 					if (response && !response.error_code) {
 						if (typeof response != 'undefined'){
-							gtag('send', {
-								hitType: 'event',
-								eventCategory: 'Compartilhar',
-								eventAction: 'Facebook',
+							gtag('event', 'Compartilhar', {
+								eventCategory: 'Facebook',
 								eventLabel: '{{page.title}}'
 							});
 						}
 					}
 					else {
-							gtag('send', {
-								hitType: 'event',
-								eventCategory: 'Compartilhar',
-								eventAction: 'Facebook',
+							gtag('event', 'Compartilhar', {
+								eventCategory: 'Facebook',
 								eventLabel: 'ERRO'
 							});
 						}
@@ -202,9 +198,7 @@
 			}
 
 			function shareWhatsApp() {
-				gtag('send', {
-						hitType: 'event',
-						eventCategory: 'Compartilhar',
+				gtag('event', 'Compartilhar', {
 						eventAction: 'Whatsapp',
 						eventLabel: '{{page.title}}'
 					});
