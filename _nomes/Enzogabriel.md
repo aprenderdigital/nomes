@@ -1,7 +1,7 @@
 ---
 title: Enzo Gabriel
 artigo: o
-picture: /images/e/enzogabriel.jpg
+picture: /images/e/Enzogabriel.jpg
 background: /images/fundos/bolas.jpg
 style: style-vermelho2
 description: Nome composto, de origem ítalo-hebraico...
