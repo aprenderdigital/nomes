@@ -1,7 +1,7 @@
 ---
 title: Elisa
 artigo: a
-picture: 
+picture: /images/e/Elisa2.jpg
 background: /images/fundos/escama.jpg
 style: style-laranja1
 description: Considerado o diminuitivo de Elisabeth...
