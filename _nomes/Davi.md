@@ -1,7 +1,7 @@
 ---
 title: Davi
 artigo: o
-picture: /images/d/Davi.jpg
+picture: /images/d/David.jpg
 background: /images/fundos/Estrelas.jpg
 style: style-vermelho1
 description: Nome bíblico, Davi tem...
