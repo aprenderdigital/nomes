@@ -179,10 +179,35 @@
 				FB.ui({
 					method: 'share',
 					href: window.location.href,
-				}, function (response) { });
+				}, function (response) { 
+					if (response && !response.error_code) {
+						if (typeof response != 'undefined'){
+							ga('send', {
+								hitType: 'event',
+								eventCategory: 'Compartilhar',
+								eventAction: 'Facebook',
+								eventLabel: '{{page.title}}'
+							});
+						}
+					}
+					else {
+							ga('send', {
+								hitType: 'event',
+								eventCategory: 'Compartilhar',
+								eventAction: 'Facebook',
+								eventLabel: 'ERRO'
+							});
+						}
+				});
 			}
 
 			function shareWhatsApp() {
+				ga('send', {
+						hitType: 'event',
+						eventCategory: 'Compartilhar',
+						eventAction: 'Whatsapp',
+						eventLabel: '{{page.title}}'
+					});
 				window.open("https://api.whatsapp.com/send?text=Olha que legal. Significado do nome {{page.title}}! 😍 " + window.location.href, '_blank');
 			}
 		</script>
