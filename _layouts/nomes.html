@@ -182,31 +182,25 @@
 				}, function (response) { 
 					if (response && !response.error_code) {
 						if (typeof response != 'undefined'){
-							ga('send', {
-								hitType: 'event',
-								eventCategory: 'Compartilhar',
-								eventAction: 'Facebook',
-								eventLabel: '{{page.title}}'
+							gtag('event', 'Compartilhar', {
+								event_category: 'Facebook',
+								event_label: '{{page.title}}'
 							});
 						}
 					}
 					else {
-							ga('send', {
-								hitType: 'event',
-								eventCategory: 'Compartilhar',
-								eventAction: 'Facebook',
-								eventLabel: 'ERRO'
+							gtag('event', 'Compartilhar', {
+								event_category: 'Facebook',
+								event_label: 'ERRO'
 							});
 						}
 				});
 			}
 
 			function shareWhatsApp() {
-				ga('send', {
-						hitType: 'event',
-						eventCategory: 'Compartilhar',
-						eventAction: 'Whatsapp',
-						eventLabel: '{{page.title}}'
+				gtag('event', 'Compartilhar', {
+						event_category: 'Whatsapp',
+						event_label: '{{page.title}}'
 					});
 				window.open("https://api.whatsapp.com/send?text=Olha que legal. Significado do nome {{page.title}}! 😍 " + window.location.href, '_blank');
 			}
