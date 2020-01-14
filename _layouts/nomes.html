@@ -182,7 +182,7 @@
 				}, function (response) { 
 					if (response && !response.error_code) {
 						if (typeof response != 'undefined'){
-							ga('send', {
+							gatag('send', {
 								hitType: 'event',
 								eventCategory: 'Compartilhar',
 								eventAction: 'Facebook',
@@ -191,7 +191,7 @@
 						}
 					}
 					else {
-							ga('send', {
+							gatag('send', {
 								hitType: 'event',
 								eventCategory: 'Compartilhar',
 								eventAction: 'Facebook',
@@ -202,7 +202,7 @@
 			}
 
 			function shareWhatsApp() {
-				ga('send', {
+				gatag('send', {
 						hitType: 'event',
 						eventCategory: 'Compartilhar',
 						eventAction: 'Whatsapp',
