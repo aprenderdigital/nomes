@@ -3,7 +3,7 @@ layout: post
 title:  "VIVA O DIA DO NOME!"
 date:   2020-01-15 14:00:00 -0300
 permalink: /blog/viva-dia-nome.html
-image: /images/blog/vivadianome.jpg
+image: /images/blog/dia-de-laura.jpg
 categories: divulgacao
 description: Além do dia do aniversário os finlandeses também celebram o “dia do nome”, uma tradição que vem lá da Idade Média.
 ---
