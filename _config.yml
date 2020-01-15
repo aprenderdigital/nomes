@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Significado dos nomes
+title: Dicionário Informal de Nomes
 email: equipe.aprender.digital@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Dicionário com o significado dos nomes.
