@@ -5,6 +5,7 @@ date:   2019-01-15 14:00:00 -0300
 permalink: /blog/viva-dia-nome.html
 image: /images/blog/vivadianome.jpg
 categories: divulgacao
+description: Além do dia do aniversário os finlandeses também celebram o “dia do nome”, uma tradição que vem lá da Idade Média.
 ---
 <img src="{{page.image}}" style="width:100%; height:auto;">
 
