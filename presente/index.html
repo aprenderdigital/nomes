@@ -81,7 +81,7 @@
 
 		<script>
 		document.getElementById("p1-artigo1").innerHTML = data["g"];
-		document.getElementById("p1-nome1").innerHTML = unescape(data["n"]);
+		document.getElementById("p1-nome1").innerHTML = decodeURIComponent(data["n"]);
 		if (data["g"] == "a") {
 			document.getElementById("p1-pronome1").innerHTML = "ela";	
 		}
@@ -89,7 +89,7 @@
 			document.getElementById("p1-pronome1").innerHTML = "ele";
 		}
 		document.getElementById("p2-artigo1").innerHTML = data["g"];
-		document.getElementById("p2-nome1").innerHTML = unescape(data["n"]);
+		document.getElementById("p2-nome1").innerHTML = decodeURIComponent(data["n"]);
 
 	  </script>
 
