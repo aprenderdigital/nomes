@@ -3,7 +3,7 @@ layout: post
 title:  "VIVA O DIA DO NOME!"
 date:   2019-01-15 14:00:00 -0300
 permalink: /blog/viva-dia-nome.html
-image: /images/blog/viva-dia-nome.jpg
+image: /images/blog/vivadianome.jpg
 categories: divulgacao
 ---
 <img src="{{page.image}}" style="width:100%; height:auto;">
