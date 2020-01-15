@@ -1,7 +1,7 @@
 ---
-title: Benjamin
+title: Joaquim
 artigo: o
-picture: /images/j/joaquim.jpg
+picture: /images/j/Joaquim.jpg
 background: /images/fundos/estrelas.jpg
 style: style-verde2
 description: Joaquim é um nome bíblico, de origem hebraica, que...
