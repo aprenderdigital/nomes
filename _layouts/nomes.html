@@ -165,7 +165,7 @@
 			{% endif %}
 
 			function generateURL() {
-				return ("/presente/index.html?n=" + encondeURIComponent("{{page.title}}") + "&g={{page.artigo}}&u=" + window.location.pathname);
+				return ("/presente/index.html?n=" + encodeURIComponent("{{page.title}}") + "&g={{page.artigo}}&u=" + window.location.pathname);
 			}
 			function presente() {
 				window.location.href = generateURL();
