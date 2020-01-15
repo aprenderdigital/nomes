@@ -22,6 +22,8 @@ url: "https://nomes.aprender.digital" # the base hostname & protocol for your si
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
+google_analytics: UA-64612385-8
+
 # Build settings
 markdown: kramdown
 theme: minima
@@ -39,6 +41,7 @@ defaults:
       type: "nomes"
     values: 
       layout: nomes
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
