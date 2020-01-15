@@ -3,7 +3,7 @@ layout: post
 title:  "HOJE É O DIA DE LAURA. MAS NÃO É SEU ANIVERSÁRIO!!!"
 date:   2020-01-18 08:00:00 -0300
 permalink: /blog/dia-de-laura.html
-image: /images/blog/vivadianome.jpg
+image: /images/blog/dia-de-laura.jpg
 categories: divulgacao
 description: Acredite, existe uma tradição Finlandesa de se comemorar o DIA DO NOME, que vem lá da Idade Média!!
 ---
@@ -38,3 +38,46 @@ Bem, se você se chama Laura, parabéns pelo seu dia!!! 🙂 Se não for, mas co
 
 <img src="/images/blog/dia-de-laura-banner.jpg" style="width:100%; height:auto;">
 
+<div class="inner">
+							<h2>Compartilhar <i>banner</i> com o nome d{{page.artigo}} {{page.title}}</h2>
+							<button type="button" class="btn btn-primary small" onclick="shareFacebook()">
+								<i class="fa fa-facebook-official" aria-hidden="true">
+								</i>&nbsp;&nbsp;Compartilhar NOME no Facebook</button>
+							<br /> <br />
+							<button type="button" class="btn btn-success small" onclick="shareWhatsApp()">
+								<i class="fa fa-whatsapp" aria-hidden="true">
+								</i>&nbsp;&nbsp;Compartilhar NOME no WhatsApp
+							</button>
+</div>
+
+<script>
+			function shareFacebook() {
+				FB.ui({
+					method: 'share',
+					href: window.location.href,
+				}, function (response) { 
+					if (response && !response.error_code) {
+						if (typeof response != 'undefined'){
+							gtag('event', 'Compartilhar', {
+								event_category: 'Facebook',
+								event_label: '{{page.title}}'
+							});
+						}
+					}
+					else {
+							gtag('event', 'Compartilhar', {
+								event_category: 'Facebook',
+								event_label: 'ERRO'
+							});
+						}
+				});
+			}
+
+			function shareWhatsApp() {
+				gtag('event', 'Compartilhar', {
+						event_category: 'Whatsapp',
+						event_label: '{{page.title}}'
+					});
+				window.open("https://api.whatsapp.com/send?text=Olha que legal. Significado do nome {{page.title}}! 😍 " + window.location.href, '_blank');
+			}
+</script>
