@@ -27,6 +27,7 @@ google_analytics: UA-64612385-8
 # Build settings
 markdown: kramdown
 theme: minima
+future: true #ligado a postagem com datas no futuro
 plugins:
   - jekyll-feed
   - jemoji
