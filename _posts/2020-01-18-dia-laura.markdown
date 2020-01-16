@@ -38,15 +38,36 @@ Bem, se você se chama Laura, parabéns pelo seu dia!!! 🙂 Se não for, mas co
 
 <img src="/images/blog/dia-de-laura-banner.jpg" style="width:100%; height:auto;">
 
+<style>
+.whatsapp {
+ background:    #00ff00;
+ border-radius: 15px;
+ padding:       8px 20px;
+ color:         #ffffff;
+ display:       inline-block;
+ font:          normal normal 20px/1 "Calibri", sans-serif;
+ text-align:    center;
+}
+.facebook {
+ background:    #3D94F6;
+ border-radius: 15px;
+ padding:       8px 20px;
+ color:         #ffffff;
+ display:       inline-block;
+ font:          normal normal 20px/1 "Calibri", sans-serif;
+ text-align:    center;
+}
+</style>
+
 <div class="inner">
-							<h2>Compartilhar <i>banner</i> com o nome d{{page.artigo}} {{page.title}}</h2>
-							<button type="button" class="btn btn-primary small" onclick="shareFacebook()">
-								<i class="fa fa-facebook-official" aria-hidden="true">
-								</i>&nbsp;&nbsp;Compartilhar NOME no Facebook</button>
+							<p>Escolha abaixo em qual das suas redes você quer compartilhar o nome da Laura.</p>
+							<button type="button" class="facebook" onclick="shareFacebook()">
+								<i class="fa fa-facebook" aria-hidden="true">
+								</i>Compartilhar banner no Facebook</button>
 							<br /> <br />
-							<button type="button" class="btn btn-success small" onclick="shareWhatsApp()">
+							<button type="button" class="whatsapp" onclick="shareWhatsApp()">
 								<i class="fa fa-whatsapp" aria-hidden="true">
-								</i>&nbsp;&nbsp;Compartilhar NOME no WhatsApp
+								</i>Compartilhar banner no WhatsApp
 							</button>
 </div>
 
