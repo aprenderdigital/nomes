@@ -75,7 +75,7 @@ Bem, se você se chama Laura, parabéns pelo seu dia!!! 🙂 Se não for, mas co
 			function shareFacebook() {
 				FB.ui({
 					method: 'share',
-					href: window.location.href,
+					href: "https://nomes.aprender.digital/nomes/Laura.html",
 				}, function (response) { 
 					if (response && !response.error_code) {
 						if (typeof response != 'undefined'){
@@ -99,6 +99,6 @@ Bem, se você se chama Laura, parabéns pelo seu dia!!! 🙂 Se não for, mas co
 						event_category: 'Whatsapp',
 						event_label: '{{page.title}}'
 					});
-				window.open("https://api.whatsapp.com/send?text=Olha que legal. Significado do nome {{page.title}}! 😍 " + window.location.href, '_blank');
+				window.open("https://api.whatsapp.com/send?text=Olha que legal. Significado do nome Laura! 😍 https://nomes.aprender.digital/nomes/Laura.html", '_blank');
 			}
 </script>
