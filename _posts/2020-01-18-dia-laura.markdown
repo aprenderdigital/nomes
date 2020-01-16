@@ -79,14 +79,14 @@ Bem, se você se chama Laura, parabéns pelo seu dia!!! 🙂 Se não for, mas co
 				}, function (response) { 
 					if (response && !response.error_code) {
 						if (typeof response != 'undefined'){
-							gtag('event', 'Compartilhar', {
+							gtag('event', 'CompartilharLaura', {
 								event_category: 'Facebook',
 								event_label: '{{page.title}}'
 							});
 						}
 					}
 					else {
-							gtag('event', 'Compartilhar', {
+							gtag('event', 'CompartilharLaura', {
 								event_category: 'Facebook',
 								event_label: 'ERRO'
 							});
