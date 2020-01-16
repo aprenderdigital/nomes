@@ -36,7 +36,7 @@ Outra curiosidade é que por lá os pais esperam até dois ou três meses, prazo
 
 Bem, se você se chama Laura, parabéns pelo seu dia!!! 🙂 Se não for, mas conhecer alguém com esse nome, compartilhe com ela o *banner* abaixo.
 
-<img src="/images/blog/dia-de-laura-banner.jpg" style="width:100%; height:auto;">
+<a href="https://nomes.aprender.digital/nomes/Laura.html"><img src="/images/blog/dia-de-laura-banner.jpg" style="width:100%; height:auto;"></a>
 
 <style>
 .whatsapp {
@@ -63,11 +63,11 @@ Bem, se você se chama Laura, parabéns pelo seu dia!!! 🙂 Se não for, mas co
 							<p>Escolha abaixo em qual das suas redes você quer compartilhar o nome da Laura.</p>
 							<button type="button" class="facebook" onclick="shareFacebook()">
 								<i class="fa fa-facebook" aria-hidden="true">
-								</i>Compartilhar banner no Facebook</button>
+								</i>Compartilhar <i>banner</i> no Facebook</button>
 							<br /> <br />
 							<button type="button" class="whatsapp" onclick="shareWhatsApp()">
 								<i class="fa fa-whatsapp" aria-hidden="true">
-								</i>Compartilhar banner no WhatsApp
+								</i>Compartilhar <i>banner</i> no WhatsApp
 							</button>
 </div>
 
