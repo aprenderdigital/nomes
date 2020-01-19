@@ -1,0 +1,104 @@
+---
+layout: post
+title:  "HOJE É O DIA DE LAURA. MAS NÃO É SEU ANIVERSÁRIO!!!"
+date:   2020-01-18 08:00:00 -0300
+permalink: /blog/dia-de-laura.html
+image: /images/blog/dia-de-laura.jpg
+categories: divulgacao
+description: Acredite, existe uma tradição Finlandesa de se comemorar o DIA DO NOME, que vem lá da Idade Média!!
+---
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+			src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v5.0&appId=1361733010640564&autoLogAppEvents=1"></script>
+<script>
+	window.fbAsyncInit = function () {
+		FB.init({
+			appId: '1361733010640564',
+			autoLogAppEvents: true,
+			xfbml: true,
+			version: 'v5.0'
+		});
+	};
+</script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+<img src="{{page.image}}" style="width:100%; height:auto;">
+
+<center>
+<i><b>Acredite, existe uma tradição Finlandesa de se comemorar o DIA DO NOME,<br> que vem lá da Idade Média!!</b></i> 
+</center>
+<br>
+ Para nós pode parecer algo muito diferente, mas além de comemorarem a data de aniversário, os Finlandeses celebram também os seus nomes durante o ano. É o que eles chamam de **Dia do Nome** (*Nimipäivä* ).
+
+Essa é uma tradição que vem desde os tempos medievais, com raízes no calendário dos santos católicos. Na Europa medieval, as crianças recebiam os nomes de acordo com os santos do dia, que eram considerados seus “padrinhos”. Então, o que se comemorava, de fato, era dia do santo e não da própria pessoa que levava o seu nome. Foi a partir do século XVI que teve início o costume de celebrar a pessoa que nascia na data do santo, com festas e presentes. No século XVI e XVII, esse costume se difundiu da Alemanha para a Dinamarca e Suécia, chegando à Finlândia nos dois séculos seguintes. A cada dia do ano atribui-se um nome ou conjunto de nomes ao calendário finlandês. Por exemplo, **18 de janeiro** é dia de **Laura**; 25 de janeiro é o dia de **Paavo** e **Pauli**; dia 24 de março, **Immanuel** e **Manu**; dia 19 de novembro é dia dos nomes **Elisabet** e **Liisa** comemorarem!
+
+Outra curiosidade é que por lá os pais esperam até dois ou três meses, prazo para registro oficial dado pelo governo, para escolher o nome da criança. A ideia é dar chance à família de conhecer um pouco a personalidade do filho para, então, decidir um nome que tenha realmente a ver com ele. Até que se defina o nome, o bebê é chamado por um apelido. 
+
+Bem, se você se chama Laura, parabéns pelo seu dia!!! 🙂 Se não for, mas conhecer alguém com esse nome, compartilhe com ela o *banner* abaixo.
+
+<a href="https://nomes.aprender.digital/nomes/Laura.html"><img src="/images/blog/dia-de-laura-banner.jpg" style="width:100%; height:auto;"></a>
+
+<style>
+.whatsapp {
+ background:    #00ff00;
+ border-radius: 15px;
+ padding:       8px 20px;
+ color:         #ffffff;
+ display:       inline-block;
+ font:          normal normal 20px/1 "Calibri", sans-serif;
+ text-align:    center;
+}
+.facebook {
+ background:    #3D94F6;
+ border-radius: 15px;
+ padding:       8px 20px;
+ color:         #ffffff;
+ display:       inline-block;
+ font:          normal normal 20px/1 "Calibri", sans-serif;
+ text-align:    center;
+}
+</style>
+
+<div class="inner">
+							<p>Escolha abaixo em qual das suas redes você quer compartilhar o nome da Laura.</p>
+							<button type="button" class="facebook" onclick="shareFacebook()">
+								<i class="fa fa-facebook" aria-hidden="true">
+								</i>Compartilhar <i>banner</i> no Facebook</button>
+							<br /> <br />
+							<button type="button" class="whatsapp" onclick="shareWhatsApp()">
+								<i class="fa fa-whatsapp" aria-hidden="true">
+								</i>Compartilhar <i>banner</i> no WhatsApp
+							</button>
+</div>
+
+<script>
+			function shareFacebook() {
+				FB.ui({
+					method: 'share',
+					href: "https://nomes.aprender.digital/nomes/Laura.html",
+				}, function (response) { 
+					if (response && !response.error_code) {
+						if (typeof response != 'undefined'){
+							gtag('event', 'CompartilharLaura', {
+								event_category: 'Facebook',
+								event_label: '{{page.title}}'
+							});
+						}
+					}
+					else {
+							gtag('event', 'CompartilharLaura', {
+								event_category: 'Facebook',
+								event_label: 'ERRO'
+							});
+						}
+				});
+			}
+
+			function shareWhatsApp() {
+				gtag('event', 'Compartilhar', {
+						event_category: 'Whatsapp',
+						event_label: '{{page.title}}'
+					});
+				window.open("https://api.whatsapp.com/send?text=Olha que legal. Significado do nome Laura! 😍 https://nomes.aprender.digital/nomes/Laura.html", '_blank');
+			}
+</script>
