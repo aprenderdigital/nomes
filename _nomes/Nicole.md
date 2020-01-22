@@ -1,7 +1,7 @@
 ---
 title: Nicole
 artigo: a
-picture: /images/n/Nicole.jpg
+picture: /images/n/Nicole2.jpg
 background: /images/fundos/Estrelas.jpg
 style: style-vermelho2
 description: O nome Nicole é a variante francesa e...
