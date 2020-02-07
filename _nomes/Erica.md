@@ -1,9 +1,9 @@
 ---
-title: Laura
+title: Erica
 artigo: a
-picture: /images/l/Laura.jpg
+picture: /images/e/Erica.jpg
 background: /images/fundos/flower.jpg
 style: style-verde2
-description: Talvez você nunca tenha relacionado...
-full-description: Talvez você nunca tenha relacionado o nome de Laura com as folhas de louro, aquelas que usamos para temperar feijão, não é mesmo? Pois saiba que tem tudo a ver. Na Grécia e Roma antigas, as folhas de louro representavam vitória e glória.  Por isso, os atletas eram homenageados com coroas de louro nas Olímpiadas. Laura é a versão feminina de Lauro, que tem origem no latim, laurus,e significa "loureiro, louro".  Portanto, quem colocava este nome em seus filhos tinha a intenção de lhes atribuir o significado de "vitoriosos", "triunfantes".
+description: Há dois registros de origem...
+full-description: Há dois registros de origem para este nome que pode ser escandinava ou Germânica. Erica é a versão feminina de Erick ou, em português, de Erico. É um nome usado em diversos países e pode ser grafado com ou sem acento. As pessoas que se chamam Erica, geralmente são carismáticas, sensíveis e espiritualizadas, mas sua característica principal é, sem dúvida, a determinação! 
 ---
