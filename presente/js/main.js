@@ -37,7 +37,7 @@ $(function(){
                 if (form.checkValidity()) {
                     var xhttp = new XMLHttpRequest();
                     xhttp.onreadystatechange = function () { console.log(this); }
-                    xhttp.open("GET", "us-central1-aprender-digital-ugugho.cloudfunctions.net/enviarEmailPresente?e=" +
+                    xhttp.open("GET", "https://us-central1-aprender-digital-ugugho.cloudfunctions.net/enviarEmailPresente?e=" +
                         document.getElementById("email").value + "&n=" + data["n"] + "&g=" + data["g"]);
                     xhttp.send();
 
